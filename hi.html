@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hi</title>
+  </head>
+  <body>
+    <h2>Caculator</h2>
+    <form>
+      <input type="text" id='a'>
+      <input type="text" id='b'> <br> <br>
+      <button type="button"onclick='tinhTong()'>Addition(+)</button>
+      <button type="button"onclick='tinhHieu()'>Subtraction(-)</button>
+      <button type="button"onclick='tinhTich()'>Multiplication(X)</button>
+      <button type="button"onclick='tinhThuong()'>Division(/)</button>
+    </form>
+    <script type="text/javascript">
+      function tinhTong() {
+        let inputBien1 = document.getElementById('a').value;
+        let inputBien2 = document.getElementById('b').value;
+        let bien1 = parseFloat(inputBien1);
+        let bien2 = parseFloat(inputBien2);
+        let tong = bien1 + bien2;
+        document.write('Result Addition: ' + tong);
+      }
+      function tinhHieu() {
+        let inputBien1 = document.getElementById('a').value;
+        let inputBien2 = document.getElementById('b').value;
+        let bien1 = parseFloat(inputBien1);
+        let bien2 = parseFloat(inputBien2);
+        let hieu = bien1 - bien2;
+        document.write('Result Addition: ' + hieu);
+      }
+      function tinhTich() {
+        let inputBien1 = document.getElementById('a').value;
+        let inputBien2 = document.getElementById('b').value;
+        let bien1 = parseFloat(inputBien1);
+        let bien2 = parseFloat(inputBien2);
+        let tich = bien1 * bien2;
+        document.write('Result Addition: ' + tich);
+      }
+      function tinhThuong() {
+        let inputBien1 = document.getElementById('a').value;
+        let inputBien2 = document.getElementById('b').value;
+        let bien1 = parseFloat(inputBien1);
+        let bien2 = parseFloat(inputBien2);
+        let thuong = bien1 / bien2;
+        document.write('Result Addition: ' + thuong);
+      }
+    </script>
+  </body>
+</html>
